@@ -128,6 +128,7 @@ module.exports = grammar({
     [$.import_statement, $.import],
     [$.export_statement, $.primary_expression],
     [$.lexical_declaration, $.primary_expression],
+    [$.using_declaration, $.primary_expression],
   ],
 
   conflicts: $ => [
@@ -1295,6 +1296,7 @@ module.exports = grammar({
       'static',
       'export',
       'let',
+      'using',
     ),
 
     _semicolon: $ => choice($._automatic_semicolon, ';'),

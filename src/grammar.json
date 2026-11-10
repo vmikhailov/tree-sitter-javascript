@@ -6769,6 +6769,10 @@
         {
           "type": "STRING",
           "value": "let"
+        },
+        {
+          "type": "STRING",
+          "value": "using"
         }
       ]
     },
@@ -7049,6 +7053,16 @@
       {
         "type": "SYMBOL",
         "name": "lexical_declaration"
+      },
+      {
+        "type": "SYMBOL",
+        "name": "primary_expression"
+      }
+    ],
+    [
+      {
+        "type": "SYMBOL",
+        "name": "using_declaration"
       },
       {
         "type": "SYMBOL",
